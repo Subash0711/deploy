@@ -1,5 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
-def temp():
-    return "<h1>FRom deploying</h1>"
+def temp(request):
+    return HttpResponse("<h1>From deploying</h1>")
